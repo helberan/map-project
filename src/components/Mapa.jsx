@@ -27,7 +27,6 @@ function ResetCenterView({ foundPlace }) {
 }
 
 function Mapa({ setSelectedMarker, foundPlace }) {
-  //const mapTileUrl = "https://api.maptiler.com/maps/basic-v2/256/{z}/{x}/{y}.png?key=rtm15iGTxIh31aG3lI6g";
   const openStreetMapUrl = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
 
   const navigate = useNavigate();

@@ -16,9 +16,9 @@ function Navigace() {
       <Container>
         <Link to="/">
           <img
-            src={require("../images/ecobat-horizontalni-logo.png")}
+            src={require("../images/Ecoleaf-logo.png")}
             alt="logo"
-            style={{ width: "auto", height: "30px" }}
+            style={{ width: "auto", height: "35px" }}
           ></img>
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

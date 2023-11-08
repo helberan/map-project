@@ -9,13 +9,8 @@ function Home() {
         se vám všechna sběrná místa v okolí.
       </p>
       <br />
-      <p>
-        V Seznamu míst můžete jednoduše pomocí filtru vyhledat místo podle názvu
-        ulice, obce nebo PSČ.
-      </p>
-      <br />
       <div className="home-img-wrapper">
-        <img src={require("../images/transportbox.jpg")} />
+        <img src={require("../images/battery-recycling.png")} />
       </div>
     </div>
   );

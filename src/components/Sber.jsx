@@ -9,6 +9,13 @@ function Sber() {
         <strong>{baterka.categoryName}</strong>
       </Popover.Header>
       <Popover.Body>{baterka.description}</Popover.Body>
+      <Popover.Body>
+        <img src="" alt={baterka.categoryName}></img>
+      </Popover.Body>
+      <Popover.Body>
+        <h5>Sběrné nádoby</h5>
+        <p>{baterka.box}</p>
+      </Popover.Body>
     </Popover>
   );
 
