@@ -1,0 +1,44 @@
+[
+  {
+    "pb": "ANO",
+    "categoryName": "Přenosné spotřebitelské baterie",
+    "fileName": "baterie_prenosne_spotrebitelske.png",
+    "description": "Baterie z ovladače, hodin, hodinek, počítačové myši, kuchyňských vah apod.",
+    "box": [
+      "ECOCHEESE",
+      "Transport Box",
+      "MaxiTube",
+      "Integra Box",
+      "Battery Box",
+      "Kaiman"
+    ]
+  },
+  {
+    "pb": "ANO",
+    "categoryName": "Malé dobíjecí baterie",
+    "fileName": "baterie_male_dobijeci.png",
+    "description": "Dobíjecí články a baterie pro mobilní telefony, laptopy, aku-nářadí, powerbanky, e-cigarety apod. v pevném obalu.",
+    "box": ["Kovový sud", "Lion Sud", "Kaiman"]
+  },
+  {
+    "ib": "ANO",
+    "categoryName": "Baterie z elektrokol",
+    "fileName": "baterie_z_elektrokol.png",
+    "description": "Dobíjecí články a baterie z elektrokol, elektrokoloběžek, e-skútrů apod. v pevném obalu.",
+    "box": ["Kovový sud", "Lion Sud"]
+  },
+  {
+    "ab": "ANO",
+    "categoryName": "Mokré a startovací baterie",
+    "fileName": "mokre_a_startovaci.png",
+    "description": "Startovací baterie, olověné (Pb) a kadmiové (Cd) akumulátory s tekutým či gelovým elektrolytem.",
+    "box": "Battery Box"
+  },
+  {
+    "ib": "ANO",
+    "categoryName": "Velké akumulátory",
+    "fileName": "velke_akumulatory.png",
+    "description": "Baterie z fotovoltaických systémů, baterie z elektromobilů apod.",
+    "box": "Lion Box 530"
+  }
+]
