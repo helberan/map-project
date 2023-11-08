@@ -34,8 +34,8 @@ function Mapa({ setSelectedMarker, foundPlace }) {
 
   // ikonka - ecobat sběrné místo
   const ecobatIcon = new Icon({
-    iconUrl: require("../images/ecobat_marker.png"), //zdroj
-    iconSize: [34, 38], // velikost
+    iconUrl: require("../images/marker.png"), //zdroj
+    iconSize: [34, 34], // velikost
   });
 
   // ikonka - hledání místa

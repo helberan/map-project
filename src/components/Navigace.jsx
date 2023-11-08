@@ -14,11 +14,13 @@ function Navigace() {
       style={{ margin: "0" }}
     >
       <Container>
-        <img
-          src={require("../images/ecobat-horizontalni-logo.png")}
-          alt="logo"
-          style={{ width: "auto", height: "30px" }}
-        ></img>
+        <Link to="/">
+          <img
+            src={require("../images/ecobat-horizontalni-logo.png")}
+            alt="logo"
+            style={{ width: "auto", height: "30px" }}
+          ></img>
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto align-items-center">
