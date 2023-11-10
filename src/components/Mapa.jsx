@@ -2,7 +2,7 @@ import "leaflet/dist/leaflet.css";
 
 import { MapContainer, TileLayer, Marker, useMap } from "react-leaflet";
 import MarkerClusterGroup from "react-leaflet-cluster";
-import L, { Icon } from "leaflet";
+import { Icon } from "leaflet";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 

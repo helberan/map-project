@@ -2,6 +2,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React from "react";
 
 import "../styles/App.css";
+import "../styles/extra-large.css";
+import "../styles/large.css";
+import "../styles/medium.css";
+import "../styles/small.css";
+import "../styles/extra-small.css";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { useState } from "react";
