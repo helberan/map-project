@@ -23,7 +23,9 @@ function Misto({ selectedMarker }) {
   return (
     <div className="Main-Panel">
       <div className="Misto-header">
-        <h3>{selectedMarker.nazev}</h3>
+        <h3>
+          <strong>{selectedMarker.nazev}</strong>
+        </h3>
         <Link to="/seznam">
           <Button
             style={{
@@ -44,13 +46,13 @@ function Misto({ selectedMarker }) {
       </div>
       <br />
       <p>
-        Adresa: {selectedMarker.ulice}, {selectedMarker.obec}{" "}
-        {selectedMarker.psc}
+        {selectedMarker.ulice}, {selectedMarker.obec} {selectedMarker.psc}
       </p>
-      <p>Kód provozovny: {selectedMarker.kod}</p>
       <br />
-      <h4>Jaké baterie je možné zde odevzdat:</h4>
-      <div className="img-wrapper">
+      <p>
+        <strong>Přijímané baterie</strong>
+      </p>
+      <div className="img-wrapper-misto">
         {baterie
           .filter(
             (baterka) =>

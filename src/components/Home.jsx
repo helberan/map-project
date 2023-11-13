@@ -9,7 +9,7 @@ function Home() {
         se vám všechna sběrná místa v okolí.
       </p>
       <br />
-      <div className="home-img-wrapper">
+      <div className="img-wrapper-home">
         <img src={require("../images/battery-recycling.png")} />
       </div>
     </div>

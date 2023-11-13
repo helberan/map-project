@@ -19,7 +19,7 @@ function Seznam({ setSelectedMarker, setFoundPlace }) {
           <Card
             key={provozovna.id}
             onClick={() => handleClick(provozovna)}
-            style={{ width: "18rem", border: "0", cursor: "pointer" }}
+            style={{ cursor: "pointer", border: "0" }}
           >
             <Card.Body>
               <Card.Title>{provozovna.nazev}</Card.Title>
