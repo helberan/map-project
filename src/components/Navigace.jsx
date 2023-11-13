@@ -24,13 +24,6 @@ function Navigace() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto align-items-center">
-            <Link to="/map-project">
-              <img
-                src={require("../images/home.png")}
-                alt="domeček"
-                style={{ width: "20px", height: "20px" }}
-              />
-            </Link>
             <NavDropdown
               title={
                 <img
