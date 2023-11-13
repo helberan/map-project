@@ -27,7 +27,7 @@ function Sber() {
           <OverlayTrigger
             key={index}
             trigger="click"
-            placement="left"
+            placement="bottom"
             overlay={popover(baterka)}
           >
             <img
