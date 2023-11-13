@@ -21,32 +21,29 @@ function Navigace() {
             style={{ width: "auto", height: "35px" }}
           ></img>
         </Link>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto align-items-center">
-            <NavDropdown
-              title={
-                <img
-                  src={require("../images/menu.png")}
-                  alt="Logo"
-                  style={{ width: "20px", height: "20px" }}
-                />
-              }
-              id="basic-nav-dropdown"
-              align="end"
-            >
-              <NavDropdown.Item href="#action/3.1">
-                <Link to="/seznam">Seznam míst</Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                <Link to="/sber">Co se sbírá</Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">
-                <Link to="/kontakt">Kontakt</Link>
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
+        <Nav className="ms-auto align-items-center">
+          <NavDropdown
+            title={
+              <img
+                src={require("../images/menu.png")}
+                alt="Logo"
+                style={{ width: "20px", height: "20px" }}
+              />
+            }
+            id="basic-nav-dropdown"
+            align="end"
+          >
+            <NavDropdown.Item href="#action/3.1">
+              <Link to="/seznam">Seznam míst</Link>
+            </NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.2">
+              <Link to="/sber">Co se sbírá</Link>
+            </NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.3">
+              <Link to="/kontakt">Kontakt</Link>
+            </NavDropdown.Item>
+          </NavDropdown>
+        </Nav>
       </Container>
     </Navbar>
   );
