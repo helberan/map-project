@@ -14,7 +14,7 @@ function Navigace() {
       style={{ margin: "0" }}
     >
       <Container>
-        <Link to="/">
+        <Link to="/map-project">
           <img
             src={require("../images/Ecoleaf-logo.png")}
             alt="logo"
@@ -24,7 +24,7 @@ function Navigace() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto align-items-center">
-            <Link to="/">
+            <Link to="/map-project">
               <img
                 src={require("../images/home.png")}
                 alt="domeček"

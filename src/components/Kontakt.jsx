@@ -2,16 +2,22 @@ function Kontakt() {
   return (
     <div className="Main-Panel">
       <h2>Kontakt</h2>
-      <p>ECOBAT s.r.o.</p>
-      <p>Soborská 1302/8 160 00 Praha 6</p>
-      <p>tel.: +420 233 332 787</p>
+      <br />
       <p>
-        <a href="https://www.ecobat.cz/" target="_blank">
-          www.ecobat.cz
-        </a>
+        <strong>Helena Beranová</strong>
       </p>
       <p>
-        <a href="mailto:ecobat@ecobat.cz">ecobat@ecobat.cz</a>
+        E-mail:{" "}
+        <a href="mailto:helca.beranova@gmail.com">helca.beranova@gmail.com</a>
+      </p>
+      <p>
+        LinkedIn:{" "}
+        <a
+          href="https://www.linkedin.com/in/helena-beranov%C3%A1-908611226/"
+          target="_blank"
+        >
+          Helena Beranová
+        </a>
       </p>
     </div>
   );
