@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/map-project/static/css/main.c9f1aa23.css",
+    "main.js": "/map-project/static/js/main.24b11304.js",
+    "static/js/335.7ebdec6c.chunk.js": "/map-project/static/js/335.7ebdec6c.chunk.js",
+    "static/media/Ecoleaf-logo.png": "/map-project/static/media/Ecoleaf-logo.4e0b9057384b3b3a8f5b.png",
+    "static/media/e-bike.png": "/map-project/static/media/e-bike.b885c47e102a34a6a1eb.png",
+    "static/media/battery-recycling.png": "/map-project/static/media/battery-recycling.215e655e375481b0a546.png",
+    "static/media/ev.png": "/map-project/static/media/ev.12af261949fbc9897863.png",
+    "static/media/accumulator.png": "/map-project/static/media/accumulator.6a49d2e46bcf26639740.png",
+    "static/media/battery.png": "/map-project/static/media/battery.42a4c2e6052ca459e829.png",
+    "static/media/pin.png": "/map-project/static/media/pin.4486e3d12a6d8597a5de.png",
+    "static/media/marker.png": "/map-project/static/media/marker.a44fca73ba01f2baaee3.png",
+    "static/media/linkedin.png": "/map-project/static/media/linkedin.6892b3ae328c7a1e055f.png",
+    "static/media/phone.png": "/map-project/static/media/phone.2f816a366f349d8f5f1d.png",
+    "index.html": "/map-project/index.html",
+    "main.c9f1aa23.css.map": "/map-project/static/css/main.c9f1aa23.css.map",
+    "main.24b11304.js.map": "/map-project/static/js/main.24b11304.js.map",
+    "335.7ebdec6c.chunk.js.map": "/map-project/static/js/335.7ebdec6c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c9f1aa23.css",
+    "static/js/main.24b11304.js"
+  ]
+}
