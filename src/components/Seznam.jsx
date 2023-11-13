@@ -1,4 +1,4 @@
-import provozovny from "../tisic_provozoven.json";
+import provozovny from "../MOCK_DATA.json";
 import { useNavigate } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 

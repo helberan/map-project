@@ -3,47 +3,30 @@
     "pb": "ANO",
     "categoryName": "Přenosné spotřebitelské baterie",
     "fileName": "battery.png",
-    "description": "Baterie z ovladače, hodin, hodinek, počítačové myši, kuchyňských vah apod.",
-    "image": "",
-    "box": [
-      "ECOCHEESE",
-      "Transport Box",
-      "MaxiTube",
-      "Integra Box",
-      "Battery Box",
-      "Kaiman"
-    ]
+    "description": "Baterie z ovladače, hodin, hodinek, počítačové myši, kuchyňských vah apod."
   },
   {
     "pb": "ANO",
     "categoryName": "Malé dobíjecí baterie",
     "fileName": "phone.png",
-    "description": "Dobíjecí články a baterie pro mobilní telefony, laptopy, aku-nářadí, powerbanky, e-cigarety apod. v pevném obalu.",
-    "image": "",
-    "box": ["Kovový sud", "Lion Sud", "Kaiman"]
+    "description": "Dobíjecí články a baterie pro mobilní telefony, laptopy, aku-nářadí, powerbanky, e-cigarety apod. v pevném obalu."
   },
   {
     "ib": "ANO",
     "categoryName": "Baterie z elektrokol",
     "fileName": "e-bike.png",
-    "description": "Dobíjecí články a baterie z elektrokol, elektrokoloběžek, e-skútrů apod. v pevném obalu.",
-    "image": "",
-    "box": ["Kovový sud", "Lion Sud"]
+    "description": "Dobíjecí články a baterie z elektrokol, elektrokoloběžek, e-skútrů apod. v pevném obalu."
   },
   {
     "ab": "ANO",
     "categoryName": "Mokré a startovací baterie",
     "fileName": "accumulator.png",
-    "description": "Startovací baterie, olověné (Pb) a kadmiové (Cd) akumulátory s tekutým či gelovým elektrolytem.",
-    "image": "",
-    "box": "Battery Box"
+    "description": "Startovací baterie, olověné (Pb) a kadmiové (Cd) akumulátory s tekutým či gelovým elektrolytem."
   },
   {
     "ib": "ANO",
     "categoryName": "Velké akumulátory",
     "fileName": "ev.png",
-    "image": "",
-    "description": "Baterie z fotovoltaických systémů, baterie z elektromobilů apod.",
-    "box": "Lion Box 530"
+    "description": "Baterie z fotovoltaických systémů, baterie z elektromobilů apod."
   }
 ]

@@ -6,7 +6,7 @@ import { Icon } from "leaflet";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
-import provozovny from "../tisic_provozoven.json";
+import provozovny from "../MOCK_DATA.json";
 
 function ResetCenterView({ foundPlace }) {
   const map = useMap();
