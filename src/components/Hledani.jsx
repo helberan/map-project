@@ -7,25 +7,27 @@ import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 
 function Hledani({ setFoundPlace }) {
-  const [searchedPlace, setSearchedPlace] = useState(""); //hodnota v input políčku
-  //const [foundPlace, setFoundPlace] = useState({}); //hodnota/data hledaného slova - searchedPlace
+  //value of input field
+  const [searchedPlace, setSearchedPlace] = useState("");
+  //value/data of searched place - searchedPlace
+  //const [foundPlace, setFoundPlace] = useState({});
 
-  //základní adresa nominatim api - pro hledání daného místa v mapě
+  //basic address nominatim api - for searching of the place in the map
   const NOMINATIM_BASE_URL = "https://nominatim.openstreetmap.org/search?";
 
-  //hledání konkrétního místa v mapě
+  //function for searching the place
   async function hledat(e) {
     const params = {
-      q: searchedPlace, //hodnota inputu - tedy co hledáme
-      format: "json", //formát api
-      addressdetails: 1, //udává detaily pro hledané místo - co vše se zobrazí
+      q: searchedPlace, //value of input - what are we searching for
+      format: "json", //format
+      addressdetails: 1, //sets what should be displayed
     };
 
-    //převod objektu params do správného tvaru
-    //např. pokud q bude "praha" - q=praha&format=json&addressdetails=1
+    //converting the params object to the correct format
+    //e.g. for "praha" -> q=praha&format=json&addressdetails=1
     const queryString = new URLSearchParams(params).toString();
 
-    //podrobnosti API callu
+    //API call details
     const requestOptions = {
       method: "GET",
       redirect: "follow",
@@ -37,13 +39,13 @@ function Hledani({ setFoundPlace }) {
         `${NOMINATIM_BASE_URL}${queryString}`,
         requestOptions
       );
-      //příchozí data
+      //recieved data
       const result = await response.json();
       console.log("výsledky: ", result);
-      setFoundPlace(result[0]); //do setFoundPlace se uloží první nalezené místo
+      setFoundPlace(result[0]); //first matched place
       console.log("Found a place: ", result[0]);
     } catch (err) {
-      console.error("err: ", err); //pokud se něco pokazí, konzole vypíš chybu
+      console.error("err: ", err); //error to console
     }
   }
 

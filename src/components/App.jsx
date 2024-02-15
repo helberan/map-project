@@ -21,9 +21,9 @@ import Footer from "./Footer";
 const LazySeznam = React.lazy(() => import("./Seznam"));
 
 function App() {
-  //data o zvolené provozovně
+  //data about selected marker
   const [selectedMarker, setSelectedMarker] = useState(null);
-  //data o místě hledaném na mapě - zadáno buď přes komponent <Hledani> nebo <Seznam>, předáváno komponentu <Mapa> pro zobrazení tohoto místa
+  //data about searched place on the map - input either from <Hledani> or <Seznam>, passed on to <Mapa>
   const [foundPlace, setFoundPlace] = useState({});
 
   return (

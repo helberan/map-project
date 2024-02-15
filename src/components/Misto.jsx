@@ -19,7 +19,7 @@ function Misto({ selectedMarker }) {
     </Popover>
   );
 
-  // Render the selected marker's data
+  // render the selected markers data
   return (
     <div className="Main-Panel">
       <div className="Misto-header">

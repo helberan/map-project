@@ -31,16 +31,16 @@ function Mapa({ setSelectedMarker, foundPlace }) {
 
   const navigate = useNavigate();
 
-  // ikonka - ecobat sběrné místo
-  const ecobatIcon = new Icon({
-    iconUrl: require("../images/marker.png"), //zdroj
-    iconSize: [34, 34], // velikost
+  // marker icon
+  const markerIcon = new Icon({
+    iconUrl: require("../images/marker.png"), //source
+    iconSize: [34, 34], // size
   });
 
-  // ikonka - hledání místa
+  // found place marker
   const icon = new Icon({
-    iconUrl: require("../images/pin.png"), //zdroj
-    iconSize: [43, 43], // velikost
+    iconUrl: require("../images/pin.png"), //source
+    iconSize: [43, 43], // size
   });
 
   let foundPlaceCoordinates = [50.0835494, 14.4341414];
@@ -74,7 +74,7 @@ function Mapa({ setSelectedMarker, foundPlace }) {
         {provozovny.map((provozovna) => (
           <Marker
             position={[parseFloat(provozovna.lat), parseFloat(provozovna.lon)]}
-            icon={ecobatIcon}
+            icon={markerIcon}
             key={provozovna.kod}
             eventHandlers={{
               click: () => {
