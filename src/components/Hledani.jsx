@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
@@ -7,45 +6,44 @@ import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 
 function Hledani({ setFoundPlace }) {
-  //value of input field
   const [searchedPlace, setSearchedPlace] = useState("");
-  //value/data of searched place - searchedPlace
-  //const [foundPlace, setFoundPlace] = useState({});
 
-  //basic address nominatim api - for searching of the place in the map
   const NOMINATIM_BASE_URL = "https://nominatim.openstreetmap.org/search?";
 
-  //function for searching the place
   async function hledat(e) {
+    if (e) e.preventDefault();
+
     const params = {
-      q: searchedPlace, //value of input - what are we searching for
-      format: "json", //format
-      addressdetails: 1, //sets what should be displayed
+      q: searchedPlace,
+      format: "json",
+      addressdetails: 1,
     };
 
-    //converting the params object to the correct format
-    //e.g. for "praha" -> q=praha&format=json&addressdetails=1
     const queryString = new URLSearchParams(params).toString();
-
-    //API call details
+    const url = `${NOMINATIM_BASE_URL}${queryString}`;
+    
     const requestOptions = {
       method: "GET",
       redirect: "follow",
     };
 
     try {
-      //api call
-      const response = await fetch(
-        `${NOMINATIM_BASE_URL}${queryString}`,
-        requestOptions
-      );
-      //recieved data
+      const response = await fetch(url, requestOptions);
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
       const result = await response.json();
-      console.log("výsledky: ", result);
-      setFoundPlace(result[0]); //first matched place
-      console.log("Found a place: ", result[0]);
+      
+      if (result.length > 0) {
+        setFoundPlace(result[0]);
+        console.log("Found a place: ", result[0]);
+      } else {
+        console.log("No place found.");
+      }
     } catch (err) {
-      console.error("err: ", err); //error to console
+      console.error("Error: ", err);
     }
   }
 
@@ -57,12 +55,10 @@ function Hledani({ setFoundPlace }) {
             placeholder="Hledat..."
             aria-label="Hledat"
             value={searchedPlace}
-            onChange={(e) => {
-              setSearchedPlace(e.target.value);
-            }}
+            onChange={(e) => setSearchedPlace(e.target.value)}
             onKeyDown={(e) => {
               if (e.key === "Enter") {
-                hledat();
+                hledat(e);
               }
             }}
           />
@@ -80,7 +76,7 @@ function Hledani({ setFoundPlace }) {
               alt="lupa"
               style={{ width: "20px", height: "20px", filter: "brightness(0)" }}
             />
-          </Button>{" "}
+          </Button>
         </InputGroup>
       </Container>
     </Navbar>
