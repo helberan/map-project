@@ -12,4 +12,6 @@ Simple map of collection points that lets you search a place on a map, showing y
 
 ## Plan for next development
 
+- Increase app speed with using global store.
+- Set up an external database.
 
